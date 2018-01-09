@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Person Home</title>
+</head>
+<body>
+
+<H1> Person Home </H1>
+
+<div th:each="r: ${persons}">
+
+	<div>
+		<b th:text="${r.id}">ID</b> -
+		<span th:text="${r.name}">Person name </span>
+
+	</div>
+</div>
+
+</body>
+</html>
